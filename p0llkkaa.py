@@ -3,7 +3,7 @@ from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, filters, ContextTypes
 
 # 🔑 Вставь сюда свои ключи
-TELEGRAM_TOKEN = "7695932062:AAE6sEo9Fp1EkyM7zwrD9-u6uDxkLCXGQg4"
+TELEGRAM_TOKEN = "8264710437:AAGHbGu-qClb3lkl6gozLig2lqD53ZGvtAE"
 GEMINI_API_KEY = "AIzaSyCQhTf8z_EpK2cjhxMbrB8ILkJKuDljHmw"
 
 genai.configure(api_key=GEMINI_API_KEY)
@@ -36,3 +36,4 @@ app.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, handle_message))
 
 print("✅ Школьный бот запущен! ^^")
 app.run_polling()
+
